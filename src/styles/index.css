@@ -1,0 +1,84 @@
+body {
+  background-color: #fff;
+}
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 1px #292929;
+  }
+  .font-outline {
+    -webkit-text-stroke: 0.5px #292929;
+  }
+}
+
+.my-collection::-webkit-scrollbar {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+.my-collection::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.my-collection::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Add some padding around the scrollbar */
+.my-collection {
+  scrollbar-gutter: stable;
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+  transition: transform 1s ease-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.react-paginate {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  gap: var(--chakra-space-4);
+  margin-top: var(--chakra-space-8);
+  margin-bottom: var(--chakra-space-12);
+  grid-column: span 6 / span6;
+}
+
+.selected {
+  background-color: var(--chakra-colors-blue-500);
+}
+
+.page {
+  margin: inherit var(--chakra-space-8);
+  display: inline-block;
+}
+.page-link {
+  color: var(--chakra-colors-gray-400);
+  min-width: var(--chakra-space-6);
+  min-height: var(--chakra-space-6);
+  border: 1px solid transparent;
+  border-radius: var(--chakra-space-2);
+  padding-left: var(--chakra-space-4);
+  padding-right: var(--chakra-space-4);
+  padding-top: var(--chakra-space-2);
+  padding-bottom: var(--chakra-space-2);
+}
+.page-link:hover {
+  color: white;
+  border: 1px solid var(--chakra-colors-blue-500);
+}

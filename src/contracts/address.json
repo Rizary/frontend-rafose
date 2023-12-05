@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "RAFOSE": "0xEE6Db7Ed429Ad6A405e84D259636000342D51ddb"
+  },
+  "mainnet": {
+    "RAFOSE": "0x0d6a17CE7319F2e2Fe7A3A09B002A0b8F415A067"
+  }
+}
